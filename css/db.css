@@ -1,0 +1,72 @@
+.topo_titulo {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 52px;
+	text-decoration: none;
+	font-weight: bold;
+}
+.topo_autor {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	text-decoration: none;
+}
+.menu_titulo {
+	font-family: "Courier New", Courier, mono;
+	font-size: 12px;
+	font-weight: normal;
+	text-decoration: none;
+	background-color: #F0F1F6;
+}
+.abaixo {
+	font-family: "Courier New", Courier, mono;
+	font-size: 12px;
+	font-weight: normal;
+	text-decoration: none;
+	background-color: #F0F1F6;
+}
+.meio_titulo {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	text-decoration: none;
+	background-color: #9DAED5;
+	background-position: left;
+}
+.meio_base {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	text-decoration: none;
+	background-color: #F0F1F6;
+	background-position: left;
+}
+a:link {
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+a:active {
+	text-decoration: none;
+}
+.formulario_cadastro {
+	font-family: "Courier New", Courier, mono;
+	font-size: 12px;
+	font-weight: normal;
+	text-decoration: none;
+}
+.formulario_login {
+	font-family: "Courier New", Courier, mono;
+	font-size: 12px;
+	font-weight: normal;
+	text-decoration: none;
+}
+.formulario_nsenha {
+	font-family: "Courier New", Courier, mono;
+	font-size: 12px;
+	font-weight: normal;
+	text-decoration: none;
+}
