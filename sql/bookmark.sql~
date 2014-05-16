@@ -1,0 +1,16 @@
+/* CREATE DATABASE "bookmark"; */
+
+USE "bookmark";
+
+CREATE TABLE "tb_links" (
+  "id_dono" int(10) unsigned NOT NULL,
+  "link" varchar(100) NOT NULL
+)
+
+CREATE TABLE "tb_usuarios" (
+  "id" int(10) unsigned NOT NULL AUTO_INCREMENT,
+  "usuario" varchar(50) NOT NULL,
+  "email" varchar(50) NOT NULL,
+  "senha" varchar(50) NOT NULL,
+  PRIMARY KEY ("id")
+) AUTO_INCREMENT=7

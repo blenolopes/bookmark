@@ -11,7 +11,7 @@
             <p>Este site/projeto como um todo n&atilde;o tem fins lucrativos e pode ser copiado e distribuido livremente. Desde que, conserve os cr&eacute;ditos do autor.</p>
             <p align="right">Bleno Vincius<br>
               blenolopes@gmail.com<br>
-              http://www.bleno.org</p>
+              http://blenolopes.com</p>
             </td>
         </tr>
       </table>

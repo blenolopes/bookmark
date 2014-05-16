@@ -4,7 +4,7 @@
     <td width="50%" valign="top" class=topo_autor><div align="right">
       <p>Bleno Vinicius<br>
         blenolopes@gmail.com<br>
-        http://www.bleno.org
+        http://blenolopes.com
       </p>
     </div></td>
   </tr>

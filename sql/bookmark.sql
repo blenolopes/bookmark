@@ -1,39 +1,67 @@
-#
-# bookmark.sql
-# ************
-#
-# Bleno Vinicius
-# blenolopes@gmail.com
-# http://www.bleno.org
-#
-# ATENÇÃO
-# *******
-# Lembre-se de criar o usuário e senha para acessar o banco de dados,
-# dando privilegios ao usuario para manipular o banco de dados bookmark.
-# O arquivo includes/secure.php contem as variaveis para acesso ao db.
-#
+-- phpMyAdmin SQL Dump
+-- version 3.4.10.1deb1
+-- http://www.phpmyadmin.net
+--
+-- Host: localhost
+-- Generation Time: May 15, 2014 at 10:02 PM
+-- Server version: 5.5.37
+-- PHP Version: 5.3.10-1ubuntu3.11
 
-/*!40100 SET CHARACTER SET latin1;*/
-/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='ANSI';*/
-/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0;*/
+SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
+SET time_zone = "+00:00";
 
 
-CREATE DATABASE /*!32312 IF NOT EXISTS*/ "bookmark" /*!40100 DEFAULT CHARACTER SET latin1 */;
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
 
-USE "bookmark";
+--
+-- Database: `bookmark`
+--
 
-CREATE TABLE /*!32312 IF NOT EXISTS*/ "tb_links" (
-  "id_dono" int(10) unsigned NOT NULL,
-  "link" varchar(100) NOT NULL
-) /*!40100 DEFAULT CHARSET=latin1*/;
+-- --------------------------------------------------------
 
-CREATE TABLE /*!32312 IF NOT EXISTS*/ "tb_usuarios" (
-  "id" int(10) unsigned NOT NULL AUTO_INCREMENT,
-  "usuario" varchar(50) NOT NULL,
-  "email" varchar(50) NOT NULL,
-  "senha" varchar(50) NOT NULL,
-  PRIMARY KEY ("id")
-) AUTO_INCREMENT=7 /*!40100 DEFAULT CHARSET=latin1 CHECKSUM=1 DELAY_KEY_WRITE=1 ROW_FORMAT=DYNAMIC*/;
+--
+-- Table structure for table `tb_links`
+--
 
-/*!40101 SET SQL_MODE=@OLD_SQL_MODE;*/
-/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;*/
+CREATE TABLE IF NOT EXISTS `tb_links` (
+  `id_dono` int(10) NOT NULL,
+  `link` varchar(1024) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `tb_links`
+--
+
+INSERT INTO `tb_links` (`id_dono`, `link`) VALUES
+(1, 'http://blenolopes.com'),
+(1, 'http://uol.com.br'),
+(1, 'http://infonet.com.br'),
+(1, 'http://xvideos.com');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tb_usuarios`
+--
+
+CREATE TABLE IF NOT EXISTS `tb_usuarios` (
+  `id` int(10) NOT NULL AUTO_INCREMENT,
+  `usuario` varchar(50) NOT NULL,
+  `email` varchar(128) NOT NULL,
+  `senha` varchar(50) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
+
+--
+-- Dumping data for table `tb_usuarios`
+--
+
+INSERT INTO `tb_usuarios` (`id`, `usuario`, `email`, `senha`) VALUES
+(1, 'Bleno Lopes', 'blenolopes@gmail.com', '733e9283fd4da012e9cd5b9c89fd66fc9d97127b');
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
